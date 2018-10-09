@@ -4,7 +4,7 @@
   "description": "socket.io example chat app",
   "main": "index.js",
   "scripts": {
-    "start": "DEBUG=http,http:* index.js",
+    "start": "DEBUG=http,http:* node index.js",
     "start-dev": "DEBUG=http,http:* nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
