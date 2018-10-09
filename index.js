@@ -28,7 +28,10 @@ app.use(morgan('combined', {
 }))
 
 app.get('/', (req, res, next) => {
-  res.send('process.env.PORT: ' + process.env.PORT )
+  res.send({
+    httpPort: http.address().port,
+    port: process.env.PORT
+  })
 })
 
 const activeSockets = {}
