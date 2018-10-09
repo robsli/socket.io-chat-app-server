@@ -4,12 +4,15 @@
   "description": "socket.io example chat app",
   "main": "index.js",
   "scripts": {
+    "start": "DEBUG=http,http:* nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Robbie Li",
   "license": "ISC",
   "dependencies": {
+    "debug": "^4.1.0",
     "express": "^4.16.3",
+    "morgan": "^1.9.1",
     "socket.io": "^2.1.1"
   },
   "devDependencies": {
