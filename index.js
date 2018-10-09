@@ -12,7 +12,7 @@ const socketActions = require('./src/constants/socket-actions')
 const unstableUnicorns = require('./src/constants/unstable-unicorns')
 
 const clientApp = process.env.NODE_ENV === 'production'
-? 'https://unstable-stable.netlify.com/'
+? 'https://unstable-stable.netlify.com'
 : 'http://localhost:3000'
 
 app.use((req, res, next) => {
