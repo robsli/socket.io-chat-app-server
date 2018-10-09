@@ -27,13 +27,6 @@ app.use(morgan('combined', {
   stream: fs.createWriteStream(path.join(__dirname, 'socket-events.log'), { flags: 'a'})
 }))
 
-app.get('/', (req, res, next) => {
-  res.send({
-    httpPort: http.address().port,
-    port: process.env.PORT
-  })
-})
-
 const activeSockets = {}
 const activeUnicorns = {}
 let messageID = 0
